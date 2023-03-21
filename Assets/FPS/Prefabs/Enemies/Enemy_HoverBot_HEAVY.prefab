@@ -154,7 +154,7 @@ MonoBehaviour:
   DeathVfxSpawnPoint: {fileID: 381893446485871685}
   LootPrefab: {fileID: 2529580269645609534, guid: 9973c412032becb4ca116ca08be62edf,
     type: 3}
-  DropRate: 1
+  DropRate: 0.75
   PathReachingRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   AttackRangeColor: {r: 1, g: 0, b: 0, a: 1}
   DetectionRangeColor: {r: 0, g: 0, b: 1, a: 1}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 320366457759794871}
-  AttackStopDistanceRatio: 0.08
+  AttackStopDistanceRatio: 1
   RandomHitSparks:
   - {fileID: 9125706537325074547}
   - {fileID: 8158939429672774431}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 500
+  MaxHealth: 750
   CriticalHealthRatio: 0.3
 --- !u!114 &3464315327790461765
 MonoBehaviour:
@@ -787,7 +787,7 @@ MonoBehaviour:
     type: 3}
   DelayBetweenShots: 0.8
   BulletSpreadAngle: 0
-  BulletsPerShot: 1
+  BulletsPerShot: 3
   RecoilForce: 1
   AimZoomRatio: 1
   AimOffset: {x: 0, y: 0, z: 0}
@@ -1116,7 +1116,7 @@ PrefabInstance:
     - target: {fileID: 13700000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0e1ff59a08c9b6d4dbc51a27ce29f6bc, type: 2}
+      objectReference: {fileID: 2100000, guid: 7e9cb0efc01c0b446a86f152b075e3d2, type: 2}
     - target: {fileID: 13700002, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -1124,7 +1124,7 @@ PrefabInstance:
     - target: {fileID: 13700002, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0e1ff59a08c9b6d4dbc51a27ce29f6bc, type: 2}
+      objectReference: {fileID: 2100000, guid: 7e9cb0efc01c0b446a86f152b075e3d2, type: 2}
     - target: {fileID: 13700004, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -1132,7 +1132,7 @@ PrefabInstance:
     - target: {fileID: 13700004, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0e1ff59a08c9b6d4dbc51a27ce29f6bc, type: 2}
+      objectReference: {fileID: 2100000, guid: 7e9cb0efc01c0b446a86f152b075e3d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
 --- !u!4 &320366457750808899 stripped
