@@ -18,11 +18,6 @@ namespace Unity.FPS.UI
             DebugUtility.HandleErrorIfNullFindObject<PlayerWeaponsManager, NotificationHUDManager>(playerWeaponsManager,
                 this);
             playerWeaponsManager.OnAddedWeapon += OnPickupWeapon;
-
-            Jetpack jetpack = FindObjectOfType<Jetpack>();
-            DebugUtility.HandleErrorIfNullFindObject<Jetpack, NotificationHUDManager>(jetpack, this);
-            jetpack.OnUnlockJetpack += OnUnlockJetpack;
-
             EventManager.AddListener<ObjectiveUpdateEvent>(OnObjectiveUpdateEvent);
         }
 
@@ -38,10 +33,6 @@ namespace Unity.FPS.UI
                 CreateNotification("Picked up weapon : " + weaponController.WeaponName);
         }
 
-        void OnUnlockJetpack(bool unlock)
-        {
-            CreateNotification("Jetpack unlocked");
-        }
 
         public void CreateNotification(string text)
         {
